@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(0, 40, 76);
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(87, 147, 237);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+}
+
+.dificuldade {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgb(87, 147, 237);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.dificuldade {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dificuldade .facil {
+    background-color: white;
+    color: rgb(0, 40, 76);
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.dificuldade .medio {
+    background-color: white;
+    color: rgb(0, 40, 76);
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.dificuldade .dificil {
+    background-color: white;
+    color: rgb(0, 40, 76);
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.dificuldade .facil:hover {
+    background-color: rgba(61, 138, 9, 0.73);
+}
+.dificuldade .medio:hover {
+    background-color: rgba(255, 165, 0, 0.73);
+}
+.dificuldade .dificil:hover {
+    background-color: rgba(255, 7, 7, 0.73);
+    color: white;
+}
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 40, 76);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    font-size: clamp(28px, 6vw, 42px);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(87, 147, 237);
+    text-align: center;
+    font-size: clamp(18px, 4vw, 26px);
+    margin-top: 20px;
+}
+
+.dificuldade {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.dificuldade a {
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    .dificuldade {
+        flex-direction: column;
+        width: 100%;
+        max-width: 250px;
+        gap: 12px;
+    }
+
+    .dificuldade a {
+        width: 100%;
+        padding: 14px;
+    }
+
+}
